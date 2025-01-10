@@ -103,6 +103,11 @@
 
   {% include js-selector.html lang=lang %}
 
+  {% if page.layout == 'cv' %}
+    <!-- custom: Add post.min.js for CV layout -->
+    <script defer src="/assets/js/dist/post.min.js"></script>
+  {% endif %}
+
   {% if jekyll.environment == 'production' %}
     <!-- PWA -->
     {% if site.pwa.enabled %}
