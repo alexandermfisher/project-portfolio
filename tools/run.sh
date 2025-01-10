@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-#
-# Run jekyll serve and then launch the site
 
+# Set the root directory for your project
+PROJECT_ROOT="$(dirname "$(dirname "$(realpath "$0")")")"
 prod=false
 command="bundle exec jekyll s -l"
 host="127.0.0.1"
@@ -9,7 +9,7 @@ host="127.0.0.1"
 help() {
   echo "Usage:"
   echo
-  echo "   bash /path/to/run [options]"
+  echo "   bash /path/to/run.sh [options]"
   echo
   echo "Options:"
   echo "     -H, --host [HOST]    Host to bind to."
@@ -40,7 +40,7 @@ while (($#)); do
   esac
 done
 
-command="$command -H $host"
+command="$command -H $host -s $PROJECT_ROOT"
 
 if $prod; then
   command="JEKYLL_ENV=production $command"
