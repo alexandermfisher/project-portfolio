@@ -25,3 +25,11 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore directories that contain temporary files
+_sass/
+assets/.DS_Store
+_posts/.DS_Store
