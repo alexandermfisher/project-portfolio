@@ -23,7 +23,7 @@ This project deepened my understanding of database internals, query processing, 
 
 ## Features
 
-- **Implements Specified BNF**: A formal specification for the SQL syntax is followed, allowing for parsing of user commands. [BNF Specification](assets/BNF.txt)
+- **Implements Specified BNF**: A formal specification for the SQL syntax is followed, allowing for parsing of user commands.
 - **Filesystem-Based Storage**: Data is stored locally using tab-separated files.
 - **Server-Client Communication**: Scripts enable interaction between the server and clients.
 
