@@ -2,7 +2,6 @@
 .bundle
 vendor
 
-
 # Jekyll cache
 .jekyll-cache
 .jekyll-metadata
@@ -33,3 +32,6 @@ assets/js/dist
 _sass/
 assets/.DS_Store
 _posts/.DS_Store
+
+TODO
+
