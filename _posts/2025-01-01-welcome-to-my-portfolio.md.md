@@ -25,10 +25,10 @@ Whether you're here to explore my programming projects, learn about my backgroun
 
 ### **Featured Projects**
 Here are some highlights of what you’ll find:
-- **[Database Server](posts/database-server/)**: A custom-built database server implementing core SQL features.
-- **[My First Project](posts/my-first-project/)**: A web application showcasing responsive design and user authentication.
+- **[Database Server](/project-portfolio/posts/database-server/)**: A custom-built database server implementing core SQL features.
+- **[My First Project](/project-portfolio/posts/my-first-project/)**: A web application showcasing responsive design and user authentication.
 
-Explore more in the **[Projects Section](categories/projects/)**.
+Explore more in the **[Projects Section](/project-portfolio/categories/projects/)**.
 
 ---
 
