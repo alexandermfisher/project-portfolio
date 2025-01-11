@@ -14,6 +14,7 @@ help() {
   echo "Options:"
   echo "     -H, --host [HOST]    Host to bind to."
   echo "     -p, --production     Run Jekyll in 'production' mode."
+  echo "     -d, --drafts         Include drafts in the build."
   echo "     -h, --help           Print this help information."
 }
 
@@ -26,6 +27,10 @@ while (($#)); do
     ;;
   -p | --production)
     prod=true
+    shift
+    ;;
+  -d | --drafts)
+    drafts=true
     shift
     ;;
   -h | --help)
@@ -44,6 +49,11 @@ command="$command -H $host -s $PROJECT_ROOT"
 
 if $prod; then
   command="JEKYLL_ENV=production $command"
+fi
+
+# Add drafts flag if enabled
+if [ "$drafts" = true ]; then
+  command="$command --drafts"
 fi
 
 if [ -e /proc/1/cgroup ] && grep -q docker /proc/1/cgroup; then
