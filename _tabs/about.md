@@ -22,7 +22,7 @@ To help you explore the content on my site, the content is organised into **two 
 
 2. **Other Content**:
    - This category includes content such as my **CV** and other posts related to professional development, tutorials, and tech insights.
-     - You can explore more content in the **[Other](/project-portfolio/categories/Other)** section.
+     - You can explore more content in the **[Other](/project-portfolio/categories/other)** section.
 
 
 Each post or project can also be tagged with relevant keywords to help you filter and find content of interest, such as programming languages, tools, and project types.
