@@ -42,6 +42,10 @@ jobs:
         env:
           JEKYLL_ENV: ${{ github.ref_name == 'main' && 'production' || 'development' }}
 
+    
+      - name: List _site directory contents
+        run: ls -R _site
+
       - name: Test site
         run: |
           bundle exec htmlproofer _site \
