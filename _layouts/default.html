@@ -47,7 +47,7 @@ layout: compress
 
           <!-- custom: panel with hide access option -->
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
-            {% unless layout.hide_access %}
+            {% unless layout.hide_access or page.hide_access %}
               <div class="access">
                 {% include_cached update-list.html lang=lang %}
                 {% include_cached trending-tags.html lang=lang %}
@@ -62,15 +62,25 @@ layout: compress
         </div>
 
         <div class="row">
-          <!-- tail -->
+          <!-- custom: tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            {% if page.footer_style != 'minimal' %}
+              {% for _include in layout.tail_includes %}
+                {% assign _include_path = _include | append: '.html' %}
+                {% include {{ _include_path }} lang=lang %}
+              {% endfor %}
+            {% endif %}
+            {% include_cached footer.html lang=lang %}
+
+          <!-- orginal: tail -->
+          {% comment %} <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
             {% for _include in layout.tail_includes %}
               {% assign _include_path = _include | append: '.html' %}
               {% include {{ _include_path }} lang=lang %}
             {% endfor %}
 
             {% include_cached footer.html lang=lang %}
-          </div>
+          </div> {% endcomment %}
         </div>
 
         {% include_cached search-results.html lang=lang %}

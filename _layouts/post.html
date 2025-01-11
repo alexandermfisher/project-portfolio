@@ -1,14 +1,15 @@
 ---
 layout: default
 refactor: true
-panel_includes:
-  - toc
 tail_includes:
   - related-posts
   - post-nav
+panel_includes:
+  - toc
 script_includes:
   - comment
 ---
+
 
 {% include lang.html %}
 
@@ -126,7 +127,67 @@ script_includes:
     {{ content }}
   </div>
 
-  <div class="post-tail-wrapper text-muted">
+
+  <!-- Footer -->
+  {% if page.footer_style == 'minimal' %}
+    <div class="post-tail-bottom d-flex justify-content-between align-items-center mt-0 pb-2"></div>
+  {% else %}
+    <div class="post-tail-wrapper text-muted">
+      <!-- categories here-->
+      {% if page.categories.size > 0 %}
+        <div class="post-meta mb-3">
+          <i class="far fa-folder-open fa-fw me-1"></i>
+          {% for category in page.categories %}
+            <a href="{{ site.baseurl }}/categories/{{ category | slugify | url_encode }}/">{{ category }}</a>
+            {%- unless forloop.last -%},{%- endunless -%}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <!-- tags -->
+      {% if page.tags.size > 0 %}
+        <div class="post-tags">
+          <i class="fa fa-tags fa-fw me-1"></i>
+          {% for tag in page.tags %}
+            <a
+              href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
+              class="post-tag no-text-decoration"
+            >
+              {{- tag -}}
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <div
+        class="
+          post-tail-bottom
+          d-flex justify-content-between align-items-center mt-5 pb-2
+        "
+      >
+        <div class="license-wrapper">
+          {% if site.data.locales[lang].copyright.license.template %}
+            {% capture _replacement %}
+          <a href="{{ site.data.locales[lang].copyright.license.link }}">
+            {{ site.data.locales[lang].copyright.license.name }}
+          </a>
+          {% endcapture %}
+
+            {{ site.data.locales[lang].copyright.license.template | replace: ':LICENSE_NAME', _replacement }}
+          {% endif %}
+        </div>
+
+        {% include post-sharing.html lang=lang %}
+      </div>
+      <!-- .post-tail-bottom -->
+    </div>
+    <!-- div.post-tail-wrapper -->
+  {% endif %}
+
+
+  {% comment %} POST FOOTER ORIGINAL {% endcomment %}
+
+  {% comment %} <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     {% if page.categories.size > 0 %}
       <div class="post-meta mb-3">
@@ -175,5 +236,7 @@ script_includes:
     </div>
     <!-- .post-tail-bottom -->
   </div>
-  <!-- div.post-tail-wrapper -->
+  <!-- div.post-tail-wrapper --> {% endcomment %}
+
+
 </article>

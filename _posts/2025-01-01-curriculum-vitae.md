@@ -2,16 +2,18 @@
 title: "Curriculum Vitae"
 date: 2025-01-01 00:00:00 +0000
 pin: true
+hide_access: true
+footer_style: minimal
 categories: [Other]
 tags: [cv, resume]
-#permalink: /cv/
-description: "A comprehensive overview of my professional journey."
+permalink: /cv/
+description: "An overview of my professional journey."
 image:
   #path: /assets/img/site/welcome-banner.png
   #lqip: /assets/img/site/welcome-banner-lqip.png
 ---
 
-Welcome to my professional CV. Below, you’ll find details about my experience, education, and skills.
+Welcome to my digitalised cuuriculum vitae. Below, you’ll find a concise overview of my key professional experiences, educational background, and skill set. This summary highlights the most relevant aspects of my career journey, offering insight into my expertise and accomplishments. For a more comprehensive view, including additional details about my roles, achievements, and certifications, feel free to [contact](#contact-information) me directly to request my full CV.
 
 ---
 
@@ -32,7 +34,7 @@ I am a results-driven professional with a strong background in mathematics, comp
 ### **Professional Experience**
 
 #### **Mathematics Teacher**  
-**Hays, Preston** (Nov 2022 – July 2023)  
+**Hays, Preston** (Nov 2022 – Jan 2025)  
 - Delivered engaging mathematics lessons at Penwortham Girls’ High School and Our Lady’s Catholic School.  
 - Adapted teaching methods to meet the diverse needs of Key Stage 3–5 students.  
 - Participated in extracurricular responsibilities, including exam invigilation, form classes, and parents’ evenings.
@@ -84,11 +86,11 @@ I am a results-driven professional with a strong background in mathematics, comp
 
 ---
 
-### **Contact Information**
+### **Contact Information** {#contact-information}
 
-- **Email**: your.email@example.com  
-- **GitHub**: [yourusername](https://github.com/yourusername)  
-- **LinkedIn**: [Alexander Fisher](https://www.linkedin.com/in/yourusername/)  
+- **Email**: af17918@alumni.bristol.ac.uk   
+- **GitHub**: [github.com/alexandermfisher](https://github.com/alexandermfisher)
+- **LinkedIn**: [linkedin.com/in/alexander-m-fisher](https://www.linkedin.com/in/alexander-m-fisher/)  
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Database Server"
 date: 2025-01-01
-categories: [Programming Projects]
+categories: [Programming Projects, Java]
 tags: [Java, Maven, SQL, JUnit, Database]
 image:
   path: /assets/img/db-thumbnail.png
