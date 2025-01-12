@@ -23,11 +23,11 @@ Whether you're here to explore my programming projects, learn about my backgroun
 
 ---
 
-### **Featured Projects**
-Here are some highlights of what you’ll find:
-- **[Database Server](/project-portfolio/posts/database-server/)**: A custom-built database server implementing core SQL features.
+### **Featured Projects**  
+Here are some highlights of what you’ll find:  
+- **[Database Server]({{ "/posts/database-server/" | relative_url }})**: A custom-built database server implementing core SQL features.  
 
-Explore more in the **[Projects Section](/project-portfolio/categories/programming-projects/)**.
+Explore more in the **[Projects Section]({{ "/categories/programming-projects/" | relative_url }})**.  
 
 ---
 

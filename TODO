@@ -1,0 +1,4 @@
+
+- fix up deployment flow --> merge stops action and has cancel cancel but the whole build/action is still green
+- fix up repo readme
+- start drafting other posts
