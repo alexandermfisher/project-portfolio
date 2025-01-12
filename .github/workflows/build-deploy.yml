@@ -46,13 +46,10 @@ jobs:
         run: |
           echo "Contents of the _site directory:"
           ls -alh _site${{ steps.pages.outputs.base_path }}
-      
-      # Debug Step: Display first part of index.html
-      - name: Display the first 20 lines of index.html
-        run: |
-          echo "Contents of index.html:"
-          head -n 20 _site${{ steps.pages.outputs.base_path }}/index.html
 
+      - name: List _site directory contents
+        run: ls -R _site
+      
       - name: Test site
         id: test
         run: |
