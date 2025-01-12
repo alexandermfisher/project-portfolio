@@ -1,3 +1,26 @@
+name: "Build, Test, and Deploy"
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
