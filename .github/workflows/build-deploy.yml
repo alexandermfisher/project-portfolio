@@ -37,6 +37,7 @@ jobs:
       - name: Build site
         run: |
           echo "Building for ${{ github.ref_name }}"
+          echo bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
           bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: ${{ github.ref_name == 'main' && 'production' || 'development' }}
@@ -45,7 +46,7 @@ jobs:
       - name: List contents of the build directory
         run: |
           echo "Contents of the _site directory:"
-          ls -alh _site${{ steps.pages.outputs.base_path }}
+          ls -alh _site
 
       - name: List _site directory contents
         run: ls -R _site
