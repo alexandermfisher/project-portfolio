@@ -63,20 +63,12 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          
-          # Fetch all branches to ensure 'main' is available
           git fetch --all
-          
-          # Checkout 'main' branch
           git checkout main
-          
-          # Merge 'dev' into 'main'
           git merge dev --no-ff -m "Automated merge from dev to main"
-          
-          # Push changes to remote 'main' branch
           git push origin main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
     environment:
