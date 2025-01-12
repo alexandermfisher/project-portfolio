@@ -41,6 +41,18 @@ jobs:
         env:
           JEKYLL_ENV: ${{ github.ref_name == 'main' && 'production' || 'development' }}
 
+      # Debug Step: List contents of _site directory
+      - name: List contents of the build directory
+        run: |
+          echo "Contents of the _site directory:"
+          ls -alh _site${{ steps.pages.outputs.base_path }}
+      
+      # Debug Step: Display first part of index.html
+      - name: Display the first 20 lines of index.html
+        run: |
+          echo "Contents of index.html:"
+          head -n 20 _site${{ steps.pages.outputs.base_path }}/index.html
+
       - name: Test site
         id: test
         run: |
