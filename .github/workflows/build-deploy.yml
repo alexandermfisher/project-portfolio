@@ -48,7 +48,7 @@ jobs:
       - name: Test site
         id: test
         run: |
-          bundle exec htmlproofer _site/project-portfolio \
+          bundle exec htmlproofer _site \
             --disable-external \
             --ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
         continue-on-error: ${{ github.ref_name == 'dev' }}
