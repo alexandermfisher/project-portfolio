@@ -6,18 +6,13 @@ order: 5
 
 Welcome to my personal website, where I showcase my **programming projects** and provide insights into my professional journey through my **Curriculum Vitae (CV)**. This site is designed to highlight the key milestones in my software development career and the various technologies I’ve worked with.
 
-This site is organised into **two main categories**: **Programming Projects** and **Other Content**. These categories are designed to make it easy for you to find relevant content based on your interests. Here’s a breakdown of what you can find:
-
 ### Navigation Using Categories and Tags
 
 To help you explore the content on my site, the content is organised into **two main categories**:
 
 1. **Programming Projects**:
-   - This category is **nested by programming language**. 
-     - Each language group (e.g., Java, Python) contains a list of projects that were developed using that language.
-     - **Example**:  
-       - **Java**  
-         - **Database Server**: A database server application written in Java.  
+   - This category is **nested by programming language**. Each language group (e.g. Java, Python) contains a list of projects that were developed using that language.
+     - **Example**:   
          - **[View Java Projects]({{ "/categories/java/" | relative_url }})**
 
 2. **Other Content**:
@@ -26,10 +21,11 @@ To help you explore the content on my site, the content is organised into **two 
 
 
 Each post or project can also be tagged with relevant keywords to help you filter and find content of interest, such as programming languages, tools, and project types.
+- **[Explore by Tags]({{ "/tags/" | relative_url }})**
 
 ### How This Website Was Made
 
-This website was built using **Jekyll**, a simple, blog-aware static site generator. The content is written in **Markdown**, making it easy to maintain and update. The site uses the **Just the Docs** theme, which is clean and ideal for technical documentation and showcasing programming projects.
+This website was built using **Jekyll**, a simple, blog-aware static site generator. The content is written in **Markdown**, making it easy to maintain and update. The site uses the **Chirpy** theme, which is clean and ideal for blogging and showcasing programming projects.
 
 - **Development**:
   - The website’s content and layout are managed with **YAML front matter**, which organises posts and pages using categories and tags.
