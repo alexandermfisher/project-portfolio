@@ -3,6 +3,9 @@ title: Simple Text Adventure Game (STAG) Engine
 layout: post
 categories: [Programming Projects, Java]
 tags: [STAG, Java, adventure, game-engine]
+image:
+  path: /assets/img/posts/stag-thumbnail.png
+  lqip: /assets/img/posts/stag-thumbnail-lqip.png # Or base64 URI
 ---
 
 # Simple Text Adventure Game (STAG) Engine

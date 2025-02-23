@@ -4,9 +4,8 @@ date: 2025-01-01
 categories: [Programming Projects, Java]
 tags: [Java, Maven, SQL, JUnit, Database]
 image:
-  path: /assets/img/db-thumbnail.png
-  #path: /assets/img/devices-mockup.png
-  lqip: /assets/img/db-thumbnail-lqip.png # Or base64 URI
+  path: /assets/img/posts/db-thumbnail.png
+  lqip: /assets/img/posts/db-thumbnail-lqip.png # Or base64 URI
 ---
 
 # Database Server
